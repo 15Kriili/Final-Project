@@ -1,0 +1,86 @@
+<BODY BACKGROUND="starbg.png">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script type="text/javascript">
+//<![CDATA[
+var redirectURL = "FinalProject.html";
+
+window.onload = function() { setInterval(countdown, 1000); }
+function countdown() {
+	var num = parseInt(document.getElementById('timer').innerHTML);
+	if(--num < 0) window.location = redirectURL;
+	else document.getElementById('timer').innerHTML = num;
+}
+//]]>
+</script>
+</head>
+
+
+<style>
+h1
+{
+text-shadow: 5px 5px 5px #0000FF;
+
+}
+</style>
+<style>
+h2
+{
+text-shadow: 5px 5px 5px #DF0101;
+
+}
+</style>
+
+<body>
+<h2><font color="white">WELCOME TO THE SPACE GAME </h2>
+<font size=6>Instructions- Travel back to Earth in your spaceship without getting hit by a comet, collect the yellow stars for more points, but look out! The red stars make you lose your precious points!
+</font>
+<h1><font color="green">Get ready! Your game begins in <span id="timer">15</span> seconds...</h1></font>
+</body>
+</html> <br>
+<input type= button value = "SKIP TO GAME" onclick="location='FinalProject.html'">
+<br>
+
+<body onload="myFunction()">
+<font color="white">
+<font size=6>
+<p id="day"></p>
+<script>
+function myFunction()
+{
+var x;
+var d=new Date().getDay();
+switch (d)
+  {
+  case 0:
+    x="Enjoy your Sunday, and this game!";
+    break;
+  case 1:
+    x="Enjoy your Monday, and this game!";
+    break;
+  case 2:
+    x="Enjoy your Tuesday, and this game!";
+    break;
+  case 3:
+    x="Enjoy your Wednesday, and this game!";
+    break;
+  case 4:
+    x="Enjoy your Thursday, and this game!";
+    break;
+  case 5:
+    x="Enjoy your Friday, and this game!";
+    break;
+  case 6:
+    x="Enjoy your Saturday, and this game!";
+    break;
+  }
+document.getElementById("day").innerHTML=x;
+}
+</script>
+
+</font>
+click the button below for more help<br>
+<input type= button value = "Help Page" onclick="location='help.html'">
+<br>
+
